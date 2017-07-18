@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Music playerApp</string>
+    <string name="info">Info</string>
+    <string name="playlists">Playlists</string>
+    <string name="albums">Albums</string>
+    <string name="settings">Settings</string>
+    <string name="showSongLyrics">Show song lyrics</string>
+    <string name="continueFromLastSong">Play from last song</string>
+    <string name="anonymousData">Send anonymous usage data</string>
+    <string name="playerAlbumSample">Album of the year - hispter singer.</string>
+    <string name="playerDescription">Music player. Here the user can listen to his music.
+    It would use the public class MediaPlayer from Android to control the audio files.</string>
+    <string name="albumsDescription">Albums list. Here the user can see his albums and details.
+    It would use the public class CardView to display each album as cards with album cover image,
+        singer name and album title.</string>
+    <string name="playlistsDescription">Playlists. Here the user can see, edit and choose to play
+        a custom playlist.</string>
+    <string name="settingsDescription">Settings screen. Here the user can adjust the configuration
+of the app.</string>
+</resources>
