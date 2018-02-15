@@ -4,66 +4,82 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button paymentButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LinearLayout infoLinearLayout = (LinearLayout)findViewById(R.id.info);
+        LinearLayout infoLinearLayout = (LinearLayout) findViewById(R.id.info);
         infoLinearLayout.setOnClickListener(infoLinearLayoutOnClickListener);
-        LinearLayout playListLinearLayout = (LinearLayout)findViewById(R.id.play_list);
+        LinearLayout playListLinearLayout = (LinearLayout) findViewById(R.id.play_list);
         playListLinearLayout.setOnClickListener(playListLinearLayoutOnClickListener);
-        LinearLayout albumsLinearLayout = (LinearLayout)findViewById(R.id.albums);
+        LinearLayout albumsLinearLayout = (LinearLayout) findViewById(R.id.albums);
         albumsLinearLayout.setOnClickListener(albumsLinearLayoutOnClickListener);
-        LinearLayout settingsLinearLayout = (LinearLayout)findViewById(R.id.settings);
+        LinearLayout settingsLinearLayout = (LinearLayout) findViewById(R.id.settings);
         settingsLinearLayout.setOnClickListener(settingsLinearLayoutOnClickListener);
+        paymentButton = (Button) findViewById(R.id.make_payment);
+        paymentButton.setOnClickListener(makePaymnetOnclickListener);
     }
 
-    final View.OnClickListener infoLinearLayoutOnClickListener = new View.OnClickListener(){
-        public void onClick(final View v){
+    final View.OnClickListener makePaymnetOnclickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
+            openPaymentActivity();
+        }
+    };
+
+    private void openPaymentActivity(){
+        Intent intent = new Intent(this, SamplePaymentActivity.class);
+        startActivity(intent);
+    }
+
+    final View.OnClickListener infoLinearLayoutOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
             openInfoActivity();
         }
     };
 
-    final View.OnClickListener playListLinearLayoutOnClickListener = new View.OnClickListener(){
-        public void onClick(final View v){
+    final View.OnClickListener playListLinearLayoutOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
             openPlayListActivity();
         }
     };
 
-    final View.OnClickListener albumsLinearLayoutOnClickListener = new View.OnClickListener(){
-        public void onClick(final View v){
+    final View.OnClickListener albumsLinearLayoutOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
             openAlbumsActivity();
         }
     };
 
-    final View.OnClickListener settingsLinearLayoutOnClickListener = new View.OnClickListener(){
-        public void onClick(final View v){
+    final View.OnClickListener settingsLinearLayoutOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
             openSettingsActivity();
         }
     };
 
-    private void openInfoActivity(){
+    private void openInfoActivity() {
         Intent intent = new Intent(this, InfoActivity.class);
         startActivity(intent);
     }
 
-    private void openPlayListActivity(){
+    private void openPlayListActivity() {
         Intent intent = new Intent(this, PlayListActivity.class);
         startActivity(intent);
     }
 
-    private void openAlbumsActivity(){
+    private void openAlbumsActivity() {
         Intent intent = new Intent(this, AlbumActivity.class);
         startActivity(intent);
     }
 
-    private void openSettingsActivity(){
+    private void openSettingsActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }

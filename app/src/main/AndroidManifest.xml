@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InfoActivity"
-            android:label="@string/title_info_activity"/>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_info_activity" />
         <activity
             android:name=".PlayListActivity"
             android:label="@string/title_activity_play_list" />
@@ -27,7 +28,7 @@
         <activity
             android:name=".AlbumActivity"
             android:label="@string/title_activity_album" />
-
+        <activity android:name=".SamplePaymentActivity"></activity>
     </application>
 
 </manifest>

@@ -5,11 +5,20 @@
     <string name="albums">Albums</string>
     <string name="settings">Settings</string>
     <string name="infoOfTheMovieAndSingers">Infomation of Movie and singers</string>
-    <string name="albumsDescription">Albums list. Here the user can see his albums and details. It would use the public class CardView to display each album as cards with album cover image, singer name and album title.</string>
-    <string name="playlistsDescription">Playlists. Here the user can see, edit and choose to play a custom playlist.</string>
-    <string name="settingsDescription">Settings screen. Here the user can adjust the configuration of the app.</string>
-    <string name="title_activity_play_list">PlayListActivity</string>
-    <string name="title_activity_settings">SettingsActivity</string>
-    <string name="title_activity_album">AlbumActivity</string>
-    <string name="title_info_activity">InfoActivity</string>
+    <string name="albumsDescription">ALBUMS LIST \nHere the user can see his albums and details. It would use the public class CardView to display each album as cards with album cover image, singer name and album title.</string>
+    <string name="playlistsDescription">PLAYLIST \nHere the user can see, edit and choose to play a custom playlist.</string>
+    <string name="settingsDescription">SETTINGS SCREEN \nHere the user can adjust the configuration of the app.</string>
+    <string name="title_activity_play_list">PLAYLIST ACTIVITY</string>
+    <string name="title_activity_settings">SETTINGS ACTIVITY</string>
+    <string name="title_activity_album">ALBUM ACTIVITY</string>
+    <string name="title_info_activity">INFORMATION ACTIVITY</string>
+    <string name="main_activity_exaplanation">Starting point of the activity. Which will be the starting activity for all other activity.</string>
+    <string name="move_to_home_screen">Move to home screen</string>
+    <string name="move_to_setting">Move to setting screen</string>
+    <string name="move_to_info">Move to Info Screen</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="enter_amount_hint">Enter amount</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="payment_sdk">PayPal payment SDK with version 2.14.2</string>
+    <string name="payment_sdk_description">The PayPal APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.</string>
 </resources>

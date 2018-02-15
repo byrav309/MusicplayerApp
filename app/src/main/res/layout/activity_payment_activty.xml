@@ -5,22 +5,28 @@
     android:layout_margin="@dimen/activity_margin"
     android:orientation="vertical">
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="@string/albumsDescription" />
+        android:text="@string/payment_sdk"/>
 
-    <Button
-        android:id="@+id/move_to_home"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/move_to_home_screen" />
-
-    <Button
-        android:id="@+id/move_to_setting"
+        android:text="@string/payment_sdk_description"/>
+    <EditText
+        android:id="@+id/editTextAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/move_to_setting" />
+        android:hint="@string/enter_amount_hint"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_now" />
 
 </LinearLayout>
