@@ -4,7 +4,7 @@
     <string name="playlists">Playlists</string>
     <string name="albums">Albums</string>
     <string name="settings">Settings</string>
-    <string name="infoOfTheMovieAndSingers">Infomation of Movie and singers</string>
+    <string name="infoOfTheMovieAndSingers">INFORMATION \nIt gives information of Movies and singers</string>
     <string name="albumsDescription">ALBUMS LIST \nHere the user can see his albums and details. It would use the public class CardView to display each album as cards with album cover image, singer name and album title.</string>
     <string name="playlistsDescription">PLAYLIST \nHere the user can see, edit and choose to play a custom playlist.</string>
     <string name="settingsDescription">SETTINGS SCREEN \nHere the user can adjust the configuration of the app.</string>
@@ -21,4 +21,6 @@
     <string name="make_payment">Make Payment</string>
     <string name="payment_sdk">PayPal payment SDK with version 2.14.2</string>
     <string name="payment_sdk_description">The PayPal APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.</string>
+    <string name="enter_amount_error_message">Please enter valid amount</string>
+
 </resources>

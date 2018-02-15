@@ -29,4 +29,10 @@
         android:layout_height="wrap_content"
         android:text="@string/pay_now" />
 
+    <Button
+        android:id="@+id/move_to_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_to_setting" />
+
 </LinearLayout>
